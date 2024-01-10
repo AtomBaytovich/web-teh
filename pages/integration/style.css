@@ -1,0 +1,423 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 42px;
+}
+
+.header__links {
+    display: flex;
+    gap: 80px;
+}
+
+.header__links a {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    /* text-decoration-line: underline; */
+}
+
+.header__social {
+    display: flex;
+    gap: 24px;
+
+}
+
+.header__social a {
+    cursor: pointer;
+}
+
+
+.start {
+    height: 800px;
+    position: relative;
+}
+
+.start h1 {
+    color: #FFF;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 620px;
+}
+
+.backgound {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../static/images/integration/main.png), linear-gradient(180deg, #151515 0%, rgba(0, 0, 0, 0.83) 100%);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(30%)
+}
+
+
+.start__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 170px;
+    /* padding-bottom: 32px; */
+}
+
+.blocks__custom {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 80px;
+}
+
+.blocks__minidesc {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blocks_desc {
+    max-width: 540px;
+    color: #FFF;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.block__blocks {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.start__block {
+    padding: 14px 24px;
+    width: 410px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    border-radius: 30px;
+    /* background: linear-gradient(180deg, #FFF 0%, rgba(226, 236, 255, 0.89) 100%); */
+    /* box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.10), 0px 13px 13px 0px rgba(0, 0, 0, 0.09), 0px 29px 17px 0px rgba(0, 0, 0, 0.05), 0px 52px 21px 0px rgba(0, 0, 0, 0.01), 0px 81px 23px 0px rgba(0, 0, 0, 0.00); */
+}
+
+.start__block p:first-child {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.start__block p:nth-child(2) {
+    color: #FFF;
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.start__block p:last-child {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 56px 0px;
+}
+
+.description__block {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.description__block p:first-child {
+    color: #2A3356;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.description__block p:last-child {
+    color: #2A3356;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 164.706% */
+    letter-spacing: 0.68px;
+}
+
+.garant {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    gap: 32px;
+    padding: 48px 0px;
+    position: relative;
+}
+
+.garant img {
+    width: 498px;
+    height: 400px;
+}
+
+.garant p {
+    max-width: 700px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    color: #000;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    /* 200% */
+}
+
+
+
+
+.use {
+    background: linear-gradient(180deg, rgba(226, 233, 255, 0.81) 0%, rgba(238, 242, 255, 0.42) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 0px;
+}
+
+
+.parallax-container {
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+    height: 120px;
+    width: 100%;
+    /* Высота контейнера, в котором будет происходить параллакс */
+    overflow-x: hidden;
+    /* Скрытие горизонтального переполнения */
+    perspective: 1px;
+    /* Создание эффекта перспективы */
+}
+
+.parallax-element {
+    width: 100%;
+    /* Ширина элемента, которая будет в два раза больше контейнера */
+    height: 120px;
+    /* Высота элемента, соответствующая высоте контейнера */
+    background-size: cover;
+    /* Растягивание фона на всю ширину элемента */
+    transform-style: preserve-3d;
+    /* Сохранение 3D-перспективы */
+}
+
+.parallax-element p {
+    width: 300px;
+    color: #ffffff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.need {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 90px 0px;
+}
+
+.need_block {
+    max-width: 1050px;
+    display: flex;
+    gap: 80px;
+}
+
+.need_block p:first-child {
+    width: 30%;
+    color: #2A3356;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.need_block p:last-child {
+    width: 70%;
+    color: #2A3356;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 164.706% */
+    letter-spacing: 0.68px;
+}
+
+
+.about {
+    background: linear-gradient(180deg, rgba(226, 233, 255, 0.81) 0%, rgba(238, 242, 255, 0.42) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 0px;
+}
+
+.about__desc {
+    color: #1F1F1F;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0.69px;
+    width: 80%;
+}
+
+.connection {
+    padding: 32px 0px;
+    max-width: 800px;
+}
+
+.connection form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.connection input {
+    font-size: 18px;
+    line-height: 1.33;
+    font-family: 'FuturaPT', sans-serif, -apple-system;
+    width: 100%;
+    height: auto;
+    background: 0 0;
+    overflow: visible;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: 0 !important;
+    resize: none;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #2A3356;
+}
+
+.connection label {
+    transition-property: all;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    line-height: 32px;
+    transition: all .2s linear;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    cursor: text;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transform-origin: 10px 0;
+    box-sizing: border-box;
+    font: 18px/1.33 'FuturaPT', sans-serif, -apple-system;
+    color: gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-font-smoothing: antialised;
+}
+
+.connection__input {
+    position: relative;
+    min-height: 32px;
+}
+
+.connection form button {
+    width: 210px;
+    height: 54px;
+    border-radius: 10px;
+    background: #2A3356;
+    margin: auto;
+
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.connection form button:hover {
+    background: #374478;
+}
+
+
+.footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    height: 140px;
+    background: linear-gradient(180deg, rgb(185 196 231 / 81%) 0%, rgb(76 103 190 / 42%) 100%);
+}
+
+.footer__links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__links a {
+    color: #2A3356;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    /* text-decoration-line: underline; */
+}
+
+.footer__social {
+    display: flex;
+    gap: 24px;
+
+}
+
+.footer__social a {
+    cursor: pointer;
+}

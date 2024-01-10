@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Развитие и поддержка конфигуратора | ВЕК</title>
+    <link rel="stylesheet" href="../../static/css/index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="start">
+            <div class="header header__container">
+                <img src="../../static/images/header/logo.svg" alt="ВЕК" />
+                <div class="header__links">
+                    <a href="../main/index.html">Главная</a>
+                    <a href="../support/index.html">Развитие и помощь</a>
+                    <a href="../integration/index.html">Интеграция</a>
+                    <a href="../contacts/index.html" style="text-decoration: underline;">Контакты</a>
+                </div>
+                <div class="header__social">
+                    <a>
+                        <img src="../../static/images/header/1.svg" alt="1" />
+                    </a>
+                    <a>
+                        <img src="../../static/images/header/2.svg" alt="2" />
+                    </a>
+                    <a>
+                        <img src="../../static/images/header/3.svg" alt="3" />
+                    </a>
+                </div>
+            </div>
+            <div class="backgound"></div>
+            <div class="start__blocks start__blocks__container blocks">
+                <div class="blocks__custom">
+                    <h1>Контакты</h1>
+                    <div class="blocks__minidesc">Команда компании ВЕК</div>
+                    <div class="blocks_desc">Команда компании ВЕК - это победители в номинации “Инвестиционный прорыв
+                        года” государственной программы развития молодёжного предпринимательства “Явделе”
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts contact">
+            <p>Мы находимся здесь:</p>
+
+
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A7ddc12bf13bc897c06c75ab6c19a89f603ca0d35f2279838c1eb1fe980faf8d2&amp;source=constructor"
+                width="950" height="500" frameborder="0"></iframe>
+
+
+            <div class="contact magik">
+                <div class="magik__block">
+                    <p>
+                        Адрес: <br />
+                        Саларьевская улица, 13к1, поселение Московский, Москва
+                    </p>
+                    <p>
+                        Почта: <br />
+                        pochta@gmail.com
+                    </p>
+                </div>
+                <div class="magik__block">
+                    <p>
+                        Номер телефона: <br />
+                        +7 (902) 964 51-84
+                    </p>
+                    <div class="header__social">
+                        <a>
+                            <img src="../../static/images/header/1.svg" alt="1" />
+                        </a>
+                        <a>
+                            <img src="../../static/images/header/2.svg" alt="2" />
+                        </a>
+                        <a>
+                            <img src="../../static/images/header/3.svg" alt="3" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="connection connection__container">
+            <form>
+                <div class="connection__input">
+                    <label for="name">Представьтесь, пожалуйста</label>
+                    <input id="name" name="name">
+
+                </div>
+                <div class="connection__input">
+                    <input id="about" name="about">
+                    <label for="about">Как с вами связаться?</label>
+                </div>
+                <div class="connection__input">
+                    <input id="text" name="text">
+                    <label for="text">Расскажите о своём проекте в кратце:</label>
+                </div>
+                <button>Отправить</button>
+            </form>
+        </section>
+
+        <div class="footer">
+            <img src="../../static/images/header/logo.svg" alt="ВЕК" />
+            <div class="footer__links">
+                <a href="../main/index.html">Главная</a>
+                <a href="../support/index.html">Развитие и помощь</a>
+                <a href="../integration/index.html">Интеграция</a>
+                <a href="../contacts/index.html" style="text-decoration: underline;">Контакты</a>
+            </div>
+            <div class="footer__social">
+                <a>
+                    <img src="../../static/images/header/1.svg" alt="1" />
+                </a>
+                <a>
+                    <img src="../../static/images/header/2.svg" alt="2" />
+                </a>
+                <a>
+                    <img src="../../static/images/header/3.svg" alt="3" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrolled = window.scrollY;
+            var parallaxElements = document.getElementsByClassName('parallax-element');
+
+            for (var i = 0; i < parallaxElements.length; i++) {
+                var element = parallaxElements[i];
+                var distance = scrolled * 0.2 - 0; /* Скорость движения элемента */
+
+                /* Движение элемента влево и вправо */
+                element.style.transform = 'translateX(' + distance + 'px)';
+            }
+        });
+
+        const connection__input = document.querySelectorAll(".connection__input");
+        connection__input.forEach(el => {
+            const input = el.querySelector("input");
+            const label = el.querySelector("label");
+
+            input.addEventListener('focus', () => {
+                label.style.top = '-24px';
+                label.style.fontSize = '12px';
+                label.style.color = 'blue';
+            });
+
+            input.addEventListener('blur', () => {
+                if (input.value === '') {
+                    label.style.top = '0';
+                    label.style.fontSize = '16px';
+                    label.style.color = 'black';
+                }
+            });
+        })
+
+    </script>
+</body>
+
+</html>
